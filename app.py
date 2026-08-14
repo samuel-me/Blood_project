@@ -47,7 +47,7 @@ def predict():
 
     #response 
     response = {
-        "prediction": pred
+        "prediction": float(pred[0][1])
     }
 
     return jsonify(response)
