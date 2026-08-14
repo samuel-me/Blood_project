@@ -25,7 +25,7 @@ def predict():
   try: 
     data = request.get_json()
 
-    input_data = pd.Dataframe([data])
+    input_data = pd.DataFrame([data])
 
     if not data:
       return jsonify({"error": "data not provided"}), 400
