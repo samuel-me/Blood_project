@@ -43,7 +43,7 @@ def predict():
 
 
     #make prediction 
-    pred = model.predict_proba(scaled_data)
+    pred = model.predict_proba(input_data)
 
     #response 
     response = {
